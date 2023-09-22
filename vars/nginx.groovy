@@ -20,12 +20,5 @@ def call(String slaveNode = 'any') {
             }
         }
     }
-    post {
-        success {
-          script {
-            sh 'sudo -i echo "Hello From Jenkins Shared Library" > /var/www/html/index.html'
-          }
-      }
-    }
   }
 }
