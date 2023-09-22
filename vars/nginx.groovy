@@ -1,8 +1,11 @@
-def call() {
+#!/usr/bin/env groovy
+def call(String slaveNode = 'any') {
   
   pipeline {
    
-    agent any
+    agent {
+      label ${slaveNode}
+    }
 
     stages {
         stage('Update Macine') {
