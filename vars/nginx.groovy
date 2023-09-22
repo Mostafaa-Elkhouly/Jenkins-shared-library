@@ -20,8 +20,8 @@ def call() {
 
     post {
         always {
-            sh 'cur 44.199.207.179 > nginx-web-server' 
-            archiveArtifacts 'nginx-web-server'
+            sh 'curl 44.199.207.179 > nginx-web-server.txt' 
+            archiveArtifacts 'nginx-web-server.txt'
         }
     }
   }
