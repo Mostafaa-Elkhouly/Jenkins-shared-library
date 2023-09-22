@@ -24,5 +24,5 @@ def call() {
             archiveArtifacts 'nginx-web-server'
         }
     }
-    
+  }
 }
