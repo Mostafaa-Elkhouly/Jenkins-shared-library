@@ -17,12 +17,5 @@ def call() {
             }
         }
     }
-
-    post {
-        always {
-            sh 'curl 44.199.207.179 > nginx-web-server.txt' 
-            archiveArtifacts 'nginx-web-server.txt'
-        }
-    }
   }
 }
