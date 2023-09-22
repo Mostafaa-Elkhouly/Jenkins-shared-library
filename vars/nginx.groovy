@@ -4,7 +4,7 @@ def call(String slaveNode = 'any') {
   pipeline {
    
     agent {
-      label ${slaveNode}
+      label '${slaveNode}'
     }
 
     stages {
